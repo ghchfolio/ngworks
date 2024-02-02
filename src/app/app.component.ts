@@ -19,5 +19,7 @@ import { CheckForUpdateService } from './services/check-for-update.service';
     styles: [],
 })
 export class AppComponent {
-    title = 'ngworks';
+    title = 'Ng17, PWAs & Github Pages';
+
+    constructor(private cfus: CheckForUpdateService) { }
 }
