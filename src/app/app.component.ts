@@ -1,17 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavComponent } from './components/nav/nav.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+    selector: 'app-root',
+    standalone: true,
+    imports: [RouterOutlet, NavComponent],
+    template: `
+    <app-nav></app-nav>
+   
+    <h1 class="text-center">Welcome to {{title}}!</h1>
+   
+    <main class="container">
+        <router-outlet />
+    </main>
   `,
-  styles: [],
+    styles: [],
 })
 export class AppComponent {
-  title = 'ngworks';
+    title = 'ngworks';
 }
