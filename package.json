@@ -4,9 +4,9 @@
     "scripts": {
         "start": "ng serve",
         "build": "ng build",
-        "start-pwa": "ng build && http-server -p 8080 -c-1 dist/ngworks/browser",
+        "http": "http-server -p 8080 -c-1 dist/ngworks/browser",
         "pre-deploy": "ng build --base-href=/ngworks/",
-        "ghp-deploy": "npx gh-pages -d dist/angular-pwa",
+        "ghp-deploy": "npx gh-pages -d dist/ngworks",
         "ng": "ng",
         "watch": "ng build --watch --configuration development"
     },
