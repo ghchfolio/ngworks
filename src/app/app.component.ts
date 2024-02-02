@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './components/nav/nav.component';
+import { CheckForUpdateService } from './services/check-for-update.service';
 
 @Component({
     selector: 'app-root',
