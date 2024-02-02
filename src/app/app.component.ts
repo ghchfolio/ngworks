@@ -10,7 +10,7 @@ import { CheckForUpdateService } from './services/check-for-update.service';
     template: `
     <app-nav></app-nav>
    
-    <h1 class="text-center">Welcome to {{title}}!</h1>
+    <h1 class="text-center my-4">{{ title }}</h1>
    
     <main class="container">
         <router-outlet />
